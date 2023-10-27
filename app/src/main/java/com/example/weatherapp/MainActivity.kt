@@ -56,6 +56,7 @@ class MainActivity : AppCompatActivity() {
         dialog.setContentView(sheetBinding.root)
         setContentView(binding.root)
 
+
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this)
         binding.serchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {

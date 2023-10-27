@@ -31,7 +31,7 @@ class RvAdapter(private val forecastArray: ArrayList<ForecastData>) :
         holder.binding.apply {
 
             val imageIcon = currentItem.weather[0].icon
-            val imageUrl = "https://openweathermap.org/img/wn/$imageIcon.png"
+            val imageUrl = "https://openweathermap.org/img/wn/$imageIcon@4x.png"
             Picasso.get().load(imageUrl).into(imgItem)
 
             tvItemTemp.text = "${currentItem.main.temp.toInt().toString()} + °C"
